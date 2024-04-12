@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
     <title>Formulário</title>
 </head>
 
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="logo.png" alt="">
+            <img src="{{ asset('images/logo.jpg') }}" alt="logo">
         </div>
         <div class="form">
             <form action="#">
