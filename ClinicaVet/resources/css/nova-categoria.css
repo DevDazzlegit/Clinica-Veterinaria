@@ -2,20 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
 
-body {
-    font-family: 'Inria Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('fundo-vet.jpg'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 100vh; 
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    background-attachment: fixed; 
-}
 .conteudo{
     display: flex;
     justify-content: flex-end;

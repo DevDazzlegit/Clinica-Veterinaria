@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu amigo animal</title>
-    <link rel="stylesheet" href="nova-categoria.css">
+    @vite(['resources/css/nova-categoria.css'])
+    <style>
+        body {
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh; 
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    background-attachment: fixed; 
+}
+    </style>
 </head>
 
 <body>
@@ -32,7 +48,7 @@
                                 <input type="text" id="info1" name="info1" required placeholder="Escreva o nome da RAÇA:" class="caixa">
                             </div>
                             <div>
-                                <input type="text" id="info2" name="info2" required placeholder="Escreava a raça de ORIGEM:" class="caixa">
+                                <input type="text" id="info2" name="info2" required placeholder="Escreva a raça de ORIGEM:" class="caixa">
                             </div>
                             <div>
                                 <input type="text" id="info3" name="info3" required placeholder="Descreva a APÂRENCIA:" class="caixa">
@@ -72,7 +88,7 @@
 
     </div>
     <div class="content">
-        <img src="logo-vet-removebg-preview.png" alt="logo" width="250px" height="250px">
+        <img src="{{ asset('images/logo.jpg') }}" alt="logo" width="250px" height="250px">
 
 
 
