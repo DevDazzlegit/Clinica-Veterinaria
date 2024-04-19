@@ -10,6 +10,10 @@ Route::get ('/relat', function(){
     return view('relat');
    });
 
+Route::get ('/lista', function() {
+    return view('clinica-veterinaria');
+});
+
    use App\Http\Controllers\HomeController;
    use App\Http\Controllers\FrontController;
    

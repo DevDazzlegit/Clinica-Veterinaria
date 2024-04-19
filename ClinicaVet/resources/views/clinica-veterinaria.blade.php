@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu amigo animal</title>
-    <link rel="stylesheet" href="estilo-clinica-vet.css">
+    @vite(['resources/css/estilo-clinica-vet.css'])
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh; 
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed; 
+}
+    </style>
 </head>
 
 <body>
@@ -35,8 +51,8 @@
                         <p class="textBox">Informações: O animal possui comportamento agressivo.</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="edit">
-                        <img src="excluir-removebg-preview (3).png" alt="ex">
+                        <p>Editar</p>
+                        <p>Excluir</p>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -55,8 +71,8 @@
                         <p class="textBox">Informações: O animal possui comportamento agressivo.</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="edit">
-                        <img src="excluir-removebg-preview (3).png" alt="ex">
+                        <p>Editar</p>
+                        <p>Excluir</p>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -64,38 +80,9 @@
                 </div>
                 
             </div>
-            
-            
-<script>
-  const botoesExibir = document.querySelectorAll('.botaoEdMenos');
-
-botoesExibir.forEach(botao => {
-    let expandido = false; // Mova a variável expandido para fora do evento de clique
-
-    botao.addEventListener('click', function() {
-        const informacoes = this.closest('.animal-info').querySelectorAll('.infs p:not(:first-child)');
-
-        if (!expandido) { 
-            informacoes.forEach(info => {
-                info.style.display = 'block';
-            });
-            this.textContent = 'Exibir Menos';
-        } else {
-            informacoes.forEach(info => {
-                info.style.display = 'none';
-            });
-            this.closest('.animal-info').querySelector('.infs p:first-child').style.display = 'block';
-            this.textContent = 'Exibir Mais';
-        }
-
-        expandido = !expandido; 
-    });
-});
-
-</script>
         </div>
         <div class="content">
-            <img src="logo-vet-removebg-preview.png" alt="logo" width="250px" height="250px">
+            <img src="{{ asset('images/logo.jpg') }}" alt="logo" width="250px" height="250px">
 
 
 
@@ -103,7 +90,7 @@ botoesExibir.forEach(botao => {
 
     </div>
     
-
+    @vite(['resources/js/app.js'])
 </body>
 
 </html>

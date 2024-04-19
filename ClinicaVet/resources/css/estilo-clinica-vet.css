@@ -1,17 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('fundo-vet.jpg'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 100vh; 
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    font-family: Arial, sans-serif;
-    background-attachment: fixed; 
-}
+
 .conteudo{
     display: flex;
     justify-content: flex-end;
@@ -28,6 +15,9 @@ body {
     background-color: white;
     overflow: auto;
     height: 732px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content {
     width: 300px;
