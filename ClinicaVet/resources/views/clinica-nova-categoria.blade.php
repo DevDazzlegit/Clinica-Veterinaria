@@ -11,7 +11,7 @@
     font-family: 'Inria Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); 
+    background-image: url('/images/background.jpg'); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;

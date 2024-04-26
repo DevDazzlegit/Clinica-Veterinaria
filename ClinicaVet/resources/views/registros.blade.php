@@ -4,14 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/nova-categoria.css'])
     <title>Meu amigo animal</title>
-    <link rel="stylesheet" href="estilo-clinica-vet.css">
+    <style>
+        body {
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/background.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh; 
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    background-attachment: fixed; 
+}
+    </style>
 </head>
 
 <body>
 
     <div class="conteudo">
-        <div class="formulari">
+        <div class="formulario">
             <div class="animal-box">
                 <div class="pesquisar">
                     <h3>Raças registradas</h3>
@@ -37,8 +53,8 @@
                         <p class="textBox">xpectativa de vida: 12 a 15 anos</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="edit">
-                        <img src="excluir-removebg-preview (3).png" alt="ex">
+                        <img src="editar-removebg-preview (1).png" alt="editar">
+                        <img src="excluir-removebg-preview (3).png" alt="excluir">
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -57,8 +73,8 @@
                         <p class="textBox">xpectativa de vida: 12 a 15 anos</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="edit">
-                        <img src="excluir-removebg-preview (3).png" alt="ex">
+                        <img src="editar-removebg-preview (1).png" alt="editar">
+                        <img src="excluir-removebg-preview (3).png" alt="excluir">
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -72,7 +88,7 @@
   const botoesExibir = document.querySelectorAll('.botaoEdMenos');
 
 botoesExibir.forEach(botao => {
-    let expandido = false; // Mova a variável expandido para fora do evento de clique
+    let expandido = false;
 
     botao.addEventListener('click', function() {
         const informacoes = this.closest('.animal-info').querySelectorAll('.infs p:not(:first-child)');

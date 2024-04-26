@@ -10,7 +10,7 @@
         body {
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); 
+    background-image: url('/images/background.jpg'); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -51,7 +51,7 @@
                         <p class="textBox">Informações: O animal possui comportamento agressivo.</p>
                     </div>
                     <div class="buttons">
-                        <p>Editar</p>
+                        <a href="/edit/1">Editar</a>
                         <p>Excluir</p>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
@@ -71,7 +71,7 @@
                         <p class="textBox">Informações: O animal possui comportamento agressivo.</p>
                     </div>
                     <div class="buttons">
-                        <p>Editar</p>
+                        <a href="/edit/1">Editar</a>
                         <p>Excluir</p>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
