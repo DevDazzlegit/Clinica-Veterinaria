@@ -34,7 +34,6 @@
                 <div class="pesquisa">
                     
                     <input type="text" placeholder="Pesquisar..." name="pesquisa" class="barra">
-                    <label for="pesquisa"><img src="Pesq-removebg-preview.png" alt="pesq"></label>
                     
                 </div>
 
@@ -50,11 +49,11 @@
                         <p class="textBox">Personalidade: Inteligentes, alertas e dedicados.</p>
                         <p class="textBox">Habilidades: Pastoreio, agilidade, obediencia e atletismo.</p>
                         <p class="textBox">Saúde: Saudavel</p>
-                        <p class="textBox">xpectativa de vida: 12 a 15 anos</p>
+                        <p class="textBox">Expectativa de vida: 12 a 15 anos</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="editar">
-                        <img src="excluir-removebg-preview (3).png" alt="excluir">
+                        <a href="edit/1">Editar</a>
+                        <a href="">Excluir</a>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -70,11 +69,11 @@
                         <p class="textBox">Personalidade: Inteligentes, alertas e dedicados.</p>
                         <p class="textBox">Habilidades: Pastoreio, agilidade, obediencia e atletismo.</p>
                         <p class="textBox">Saúde: Saudavel</p>
-                        <p class="textBox">xpectativa de vida: 12 a 15 anos</p>
+                        <p class="textBox">Expectativa de vida: 12 a 15 anos</p>
                     </div>
                     <div class="buttons">
-                        <img src="editar-removebg-preview (1).png" alt="editar">
-                        <img src="excluir-removebg-preview (3).png" alt="excluir">
+                        <a href="edit/1">Editar</a>
+                        <a href="">Excluir</a>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -113,7 +112,7 @@ botoesExibir.forEach(botao => {
 </script>
         </div>
         <div class="content">
-            <img src="logo-vet-removebg-preview.png" alt="logo" width="250px" height="250px">
+            <img src="{{ asset('images/logo.jpg') }}" alt="logo" width="250px" height="250px">
 
 
 

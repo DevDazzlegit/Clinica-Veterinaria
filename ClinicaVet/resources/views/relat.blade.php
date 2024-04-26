@@ -110,7 +110,7 @@
 
                         <div class="gender-input">
                             <input id="none" type="checkbox" name="gender">
-                            <label for="none">felino</label>
+                            <label for="none">Felino</label>
                         </div>
                     </div>
                 </div>

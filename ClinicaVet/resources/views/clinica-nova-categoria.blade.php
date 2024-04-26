@@ -34,7 +34,6 @@
                     <div class="pesquisa">
 
                         <input type="text" placeholder="Pesquisar..." name="pesquisa" class="barra">
-                        <label for="pesquisa"><img src="Pesq-removebg-preview.png" alt="pesq"></label>
 
                     </div>
 
@@ -42,7 +41,7 @@
 
                 <div class="animal-info">
                     <div class="infs">
-                        <form action="/submit_form" method="post">
+                        <form onsubmit="return exibirMensagem()">
                             <div>
                                 
                                 <input type="text" id="info1" name="info1" required placeholder="Escreva o nome da RAÇA:" class="caixa">
@@ -69,13 +68,13 @@
                                 <input type="text" id="info8" name="info8" required placeholder="Descreva sobre a EXPECTATIVA DE VIDA:" class="caixa">
                             </div>
                             
-                        </form>
 
                     </div>
                     <div class="buttons">
                         <h5>Numero de registro: A ser gerado</h5>
-                        <button>Salvar alterações</button>
-                        <button>Descartar Alterações</button>
+                        <button type="submit">Salvar alterações</button>
+                    </form>
+                        <button type="button" onclick="limparCampos()">Descartar alterações</button>
                     </div>
 
 
@@ -95,6 +94,20 @@
     </div>
 
     </div>
+    <script>
+        function limparCampos() {
+            var inputs = document.getElementsByClassName('caixa');
+            
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+        }
+
+        function exibirMensagem() {
+            alert('Informações foram salvas com sucesso!');
+            return;
+        }
+    </script>
 
 
 </body>

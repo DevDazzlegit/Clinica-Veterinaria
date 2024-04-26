@@ -52,7 +52,7 @@
                     </div>
                     <div class="buttons">
                         <a href="/edit/1">Editar</a>
-                        <p>Excluir</p>
+                        <a href="">Excluir</a>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="buttons">
                         <a href="/edit/1">Editar</a>
-                        <p>Excluir</p>
+                        <a href>Excluir</a>
 
                         <button type="button" class="botaoEdMenos botaoExibir">Exibir menos</button>
                     </div>
